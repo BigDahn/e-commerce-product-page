@@ -9,21 +9,19 @@ const Hero4 = '/images/image-product-4.jpg'
 const Images = [Hero1, Hero2, Hero3, Hero4]
 
 const Modal = () => {
-
-  const {dispatch} = useCart()
+  const { dispatch } = useCart()
   const [image, setImage] = useState(Images[0])
-  const [num,setNum] = useState(0)
-  function nextButton () {
-setNum((n)=> n >= 3 ? 0 : n + 1)
+  const [num, setNum] = useState(0)
+  function nextButton() {
+    setNum((n) => (n >= 3 ? 0 : n + 1))
     setImage(Images[num])
   }
   function prevButton() {
-    setNum((n) => (n <= 0  ? 3 : n - 1))
+    setNum((n) => (n <= 0 ? 3 : n - 1))
     setImage(Images[num])
-    
   }
   return (
-    <div className=" hidden lg:fixed inset-0 bg-black backdrop-blur-sm bg-opacity-25 lg:flex justify-center items-center">
+    <div className=" hidden lg:fixed inset-0 bg-black backdrop-blur-sm bg-opacity-25 lg:flex justify-center items-center z-50">
       <button
         className="rounded-full bg-white h-8 w-8 flex items-center justify-center relative bottom-[3rem] right-[-3rem] "
         onClick={() => prevButton()}
