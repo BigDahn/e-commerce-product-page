@@ -1,15 +1,14 @@
-import { useCart } from "../contexts/CartContext"
-
+import { useCart } from '../contexts/CartContext'
 
 const Amount = () => {
-  const { numOfItems,dispatch } = useCart()
+  const { numOfItems, dispatch } = useCart()
   return (
     <div className="rounded-md bg-gray-200 ">
       <div className="flex items-center justify-between pl-2 h-12 pr-2 lg:w-32 lg:h-10">
         <div>
           <img
             src="/images/icon-minus.svg"
-            alt=""
+            alt="decrease"
             role="button"
             className="hover:opacity-25"
             onClick={() => dispatch({ type: 'reduce' })}
@@ -21,7 +20,7 @@ const Amount = () => {
         <div>
           <img
             src="/images/icon-plus.svg"
-            alt=""
+            alt="increase"
             role="button"
             className="hover:opacity-25"
             onClick={() => dispatch({ type: 'increase' })}

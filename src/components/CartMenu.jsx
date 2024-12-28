@@ -13,7 +13,7 @@ const CartMenu = () => {
           <div className="flex items-center justify-evenly pt-6">
             <img
               src="/images/image-product-1.jpg"
-              alt=""
+              alt="image"
               className="w-12 rounded-sm"
             />
             <div>
@@ -23,7 +23,7 @@ const CartMenu = () => {
                 <span className="ml-1">${totalCost}.00</span>
               </p>
             </div>
-            <img src="/images/icon-delete.svg" alt="" />
+            <img src="/images/icon-delete.svg" alt="delete" />
           </div>
           <button className="bg-orange-500 rounded-md ml-2 mr-2 h-10">
             Checkout

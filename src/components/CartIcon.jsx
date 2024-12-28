@@ -11,7 +11,7 @@ const CartIcon = () => {
       )}
       <img
         src="/images/icon-cart.svg"
-        alt=""
+        alt="cart"
         role="button"
         className="pb-1 relative"
         onClick={() => dispatch({ type: 'openCartMenu' })}

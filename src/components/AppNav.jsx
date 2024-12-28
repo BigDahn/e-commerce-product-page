@@ -1,12 +1,14 @@
+import { useCart } from '../contexts/CartContext'
 import CartIcon from './CartIcon'
 
 const AppNav = () => {
+  const {dispatch} = useCart()
   return (
     <>
       <div className=" pb-3 align-element mt-6 flex items-center justify-between lg:pb-0">
         <div className="flex items-center gap-4  lg:gap-10 ">
-          <img src="/images/icon-menu.svg" alt="" className="lg:hidden" />
-          <img src="/images/logo.svg" />
+          <img src="/images/icon-menu.svg" alt="menu" className="lg:hidden" role='button' onClick={()=>dispatch({type:"openSidebar"})} />
+          <img src="/images/logo.svg" alt='logo' />
           <ul className=" hidden lg:flex gap-6 cursor-pointer text-gray-400">
             <li className=" hover:border-b-2 border-orange-500 ">
               Collections

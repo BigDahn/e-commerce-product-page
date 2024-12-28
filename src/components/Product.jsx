@@ -60,7 +60,7 @@ useEffect(() => {
           </svg>
         </button>
         <button
-          className="rounded-full bg-white h-12 w-12 lg:h-8 lg:w-8 flex items-center justify-center absolute bottom-[12rem] left-[21rem]"
+          className="rounded-full bg-white h-12 w-12 lg:h-8 lg:w-8 flex items-center justify-center absolute bottom-[12rem] left-[21.9rem]"
           onClick={() => nextButton()}
         >
           <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
